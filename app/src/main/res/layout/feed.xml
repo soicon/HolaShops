@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="78dp" />
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="my friend"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/profile_image"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/content"
+                    android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:id="@+id/image_id"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/content" />
+
+
+                <Button
+                    android:id="@+id/order_button"
+                    android:text="Order"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_id"
+                    android:background="@drawable/rounded_red"
+                    android:layout_marginLeft="80dp"/>
+                <Button
+                    android:id="@+id/feedback_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_id"
+                    android:layout_marginLeft="50dp"
+                    android:text="Feedback"
+                    android:textColor="#fff"
+                    android:background="@drawable/rounded_red"
+                    android:layout_toRightOf="@id/order_button"/>
+
+
+            </RelativeLayout>
+
+
+
+</RelativeLayout>

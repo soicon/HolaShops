@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D32F2F</color>
+    <color name="colorPrimaryDark">#F44336</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="toolbar_text_color">#ffffff</color>
+
+
+    <!--tab color-->
+    <color name="tabIndicatorColor">#e31722</color>
+    <color name="tabSelectedTextColor">#e31722</color>
+    <color name="tabTextColor">#ffffff</color>
+</resources>

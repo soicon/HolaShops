@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_red">
+
+<LinearLayout
+    android:id="@+id/titleLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tiêu Đề"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/profile_image" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title"
+            android:backgroundTint="#fff"/>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/priceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLayout"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Giá"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/profile_image"/>
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:backgroundTint="#fff"
+                android:layout_toRightOf="@+id/title"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/DesLayout"
+            android:layout_below="@id/priceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/desceribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Miêu Tả"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/profile_image"/>
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title"
+                android:backgroundTint="#fff"/>
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DesLayout"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_add_a_photo_white_24px" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
